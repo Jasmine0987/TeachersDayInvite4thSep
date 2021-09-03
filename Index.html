@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeachersDayInvite</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="SisterNiveditaSchool"> Young Niveditans </a>
+        <ul>
+            <li> <a href="Index.html" class="active"> Invite </a> </li>
+            <li> <a href="Teachers.html"> Teachers </a> </li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text"> Teachers Day </h2>
+        <a href ="#sec" id="btn">WELCOME</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Happy Teachers Day To All Teachers</h2>
+        <p>A teacher is a friend and a philosopher who guides us in understanding the world around us. From academic knowledge to moral knowledge, a teacher is a treasure trove. A teacher’s contribution to the world is priceless because of the fact that they educate the men and women of tomorrow.<br><br> Regardless of the date, a teacher’s contribution is priceless. We celebrate Teacher’s Day on the 5th of September because it is the birthday of India’s former President, Dr Radhakrishnan. He was a person who loved and adored children. Dr Radhakrishnan would fill in as a teacher, and the students loved him. Teachers leave a significant impact on each person’s life. They help you, motivate you, and guide you to become the best version of yourself.<br></br> Marking this day of celebration Please join us for a wonderful teachers day being hosted by all the Young Niveditans. Join us in to celebrate our UNSUNG WARRIORS who have been LEADING US IN THIS CRISIS AND REIMAGINING THE FUTURE and party to the beats of RETRO ERA. </p>
+        <br> </br>
+            <h3> SO MARK YOUR DATES: 4TH OF SEPTEMBER,2021 </h3>
+            <H3> VENUE: OUR FAVOURITE SCHOOL </H3>
+            <H3> Time: 10p.m </H3>
+            <H3> AWAITING YOUR PRESENCE "You are all the Starlight of our Lifes" </H3>
+    </div>
+    <script> 
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountain_front = document.getElementById('mountain_front'); 
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
